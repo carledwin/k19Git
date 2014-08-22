@@ -1,0 +1,58 @@
+PASSO 1
+crie o WS
+
+PASSO 2
+public o WS
+
+PASSO 3
+crie um client
+
+PASSO 4
+execute o wsimport dentro da pasta src do client
+
+wsimport ****************************************************************************
+
+C:\>cd k19
+
+C:\k19>cd allWSMath
+
+C:\k19\allWSMath>cd src
+
+
+C:\k19\allWSMath\src>wsimport -keep http://localhost:8080/SumService/Sum?WSDL
+parsing WSDL...
+Generating code...
+Compiling code...
+
+C:\k19\allWSMath\src>wsimport -keep http://localhost:8080/RandomService/Random?WSDL
+parsing WSDL...
+Generating code...
+Compiling code...
+
+C:\k19\allWSMath\src>wsimport -keep http://localhost:8080/DivisionService/Division?WSDL
+parsing WSDL...
+Generating code...
+Compiling code...
+
+C:\k19\allWSMath\src>wsimport -keep http://localhost:8080/SubtractionService/Subtraction?WSDL
+parsing WSDL...
+Generating code...
+Compiling code...
+
+C:\k19\allWSMath\src>wsimport -keep http://localhost:8080/MultiplicationService/Multiplication?WSDL
+parsing WSDL...
+Generating code...
+Compiling code...
+
+
+Testes para os Web Services via Glassfish
+
+http://localhost:8080/SumService/Sum?Tester
+http://localhost:8080/RandomService/Random?Tester
+http://localhost:8080/DivisionService/Division?Tester
+http://localhost:8080/SubtractionService/Subtraction?Tester
+http://localhost:8080/MultiplicationService/Multiplication?Tester
+
+
+
+end wsimport ****************************************************************************

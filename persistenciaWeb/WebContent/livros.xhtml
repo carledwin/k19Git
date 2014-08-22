@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"> 
+
+<h:head>
+<title>Livros</title>
+</h:head> 
+<body> 
+
+<h5>Novo Livro</h5>
+
+<h:messages />
+
+<h:form>
+	<h:outputLabel value="Nome: " />
+	<h:inputText value="#{livroMB.livro.nome}" />
+	
+	<h:outputLabel value="Preço: " />
+	<h:inputText value="#{livroMB.livro.preco}" />
+	
+	<h:commandButton value="Salvar" action="#{livroMB.adiciona}" />
+</h:form>
+
+<h5>Lista de Livros</h5>
+
+<h:dataTable value="#{livroMB.livros}" var="livro">
+	<h:column>
+		<h:outputText value="#{livro.nome}" />
+		<h:outputText value="#{livro.preco}" />
+	</h:column>
+</h:dataTable>
+
+</body> 
+</html>

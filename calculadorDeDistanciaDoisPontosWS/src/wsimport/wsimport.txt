@@ -1,0 +1,35 @@
+PASSO 1
+crie o WS
+
+PASSO 2
+public o WS
+
+PASSO 3
+crie um client
+
+PASSO 4
+execute o wsimport dentro da pasta src do client
+
+wsimport ****************************************************************************
+
+C:\>cd k19
+
+C:\k19>cd calculadorDeDistanciaDoisPontosClient
+
+C:\k19\calculadorDeDistanciaDoisPontosClient>cd src
+
+
+C:\k19\calculadorDeDistanciaDoisPontosClient\src>wsimport -keep http://localhost:8080/calculadorDeDistanciaDoisPontos?wsdl
+parsing WSDL...
+Generating code...
+Compiling code...
+
+
+
+Testes para os Web Services via Glassfish
+
+http://localhost:8080/calculadorDeDistanciaDoisPontosClient/calculador?Tester
+
+
+
+end wsimport ****************************************************************************

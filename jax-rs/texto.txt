@@ -1,0 +1,10 @@
+A REST 
+
+"
+(Transferência do Estado Representativo) é pretendida como uma imagem do design 
+da aplicação se comportará: uma rede de websites (um estado virtual), onde o utilizador 
+progride com uma aplicação selecionando as ligações (transições do estado), tendo como 
+resultado a página seguinte (que representa o estado seguinte da aplicação) que está 
+sendo transferida ao utilizador e apresentada para seu uso."
+	
+												Dr.Roy Fieldin

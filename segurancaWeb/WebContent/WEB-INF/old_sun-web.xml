@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sun-web-app PUBLIC "-//Sun Microsystems, Inc.//DTD GlassFish Application Server 3.0 Servlet 3.0//EN" "http://www.sun.com/software/appserver/dtds/sun-web-app_3_0-0.dtd">
+<sun-web-app>
+ <context-root>/segurancaWeb</context-root>
+<security-role-mapping>
+	 <role-name>ADMIN</role-name>
+ 	<group-name>admin</group-name>
+</security-role-mapping>
+
+<security-role-mapping>
+	<role-name>USERS</role-name>
+	<group-name>users</group-name>
+</security-role-mapping>
+</sun-web-app>
+
+<!-- 
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sun-web-app PUBLIC "-//Sun Microsystems, Inc.//DTD GlassFish Application Server 3.0 Servlet 3.0//EN" "http://www.sun.com/software/appserver/dtds/sun-web-app_3_0-0.dtd">
+<sun-web-app>
+ <context-root>different-name</context-root>
+ 
+ <security-role-mapping>
+   <role-name>admin</role-name>
+   <principal-name>js</principal-name>
+   <group-name>manager</group-name>
+ </security-role-mapping>
+ 
+ <ejb-ref>
+     <ejb-ref-name>ejb/helloBean</ejb-ref-name>
+     <jndi-name>HelloBean</jndi-name>
+ </ejb-ref>
+ 
+ <resource-ref>
+     <res-ref-name>jdbc/dataSource</res-ref-name>
+     <jndi-name>jdbc/__default</jndi-name>
+     <default-resource-principal>
+         <name>guest</name>
+         <password>guest</password>
+     </default-resource-principal>
+ </resource-ref>
+ <class-loader delegate="true"/>
+</sun-web-app>  -->
